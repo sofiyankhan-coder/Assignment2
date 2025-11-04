@@ -13,21 +13,16 @@ router.get('/home', function(req, res, next) {
 
 /* GET About page. */
 router.get('/about', function(req, res, next) {
-  res.render('index', { title: 'About us' });
+  res.render('about', { title: 'about' });
 });
 
-/* GET products page. */
-router.get('/products', function(req, res, next) {
-  res.render('index', { title: 'Products' });
-});
-
-/* GET Services page. */
-router.get('/services', function(req, res, next) {
-  res.render('index', { title: 'Services' });
-});
-
-/* GET home page. */
+/* GET contact page. */
 router.get('/contact', function(req, res, next) {
-  res.render('index', { title: 'Contact us' });
+  res.render('contact', { title: 'contact' });
+});
+
+/* GET project page. */
+router.get('/project', function(req, res, next) {
+  res.render('project', { title: 'projects' });
 });
 module.exports = router;

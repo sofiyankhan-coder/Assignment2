@@ -1,5 +1,44 @@
-<%- include ./partials/header.ejs %>
-<%- include ./partials/main_nav.ejs %>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %> page</p>
-<%- include ./partials/footer.ejs %>
+<!--I won't repeat comments for every page on common things like nav tags because i already commented about it on one page-->
+<!DOCTYPE html> <!--informs web browser about the html version in use-->
+<html> <!--basic html tag along with head and body-->
+    <head>
+        <meta charset="UTF-8"> <!--this code allows use for all alphanumerics, signs, symbols whatever-->
+
+
+        <!--links this html file to the css stylesheet file in the directory with consideration to different formats like for desktop, tablet, phone-->
+        <meta name="viewport" content="width=device-width">
+        <!-- full-size monitor style sheet-->
+        <link href="style.css" rel="stylesheet" type="text/css" media="only screen and (min-width:960px)">
+        <!-- tablet style sheet-->
+        <link href="tablet.css" rel="stylesheet" type="text/css" media="only screen and (min-width:481px) and (max-width:960px)">
+        <!-- phone style sheet-->
+        <link href="phone.css" rel="stylesheet" type="text/css" media="only screen and (max-width:480px)">
+
+        <title>Home page</title> <!--shows Home Page as a title on the tab area-->
+
+    </head>
+
+    <body>
+        <h1>Welcome to my webiste!</h1> <!--heading-->
+        
+        <div id="banner">
+            <nav> <!--semantic tag for navigation links throughout the website-->
+                <a href="home.html">Home Page</a> | 
+                <a href="about.html">About me</a> | 
+                <a href="projects.html">projects</a> |
+                <a href="contact.html">contact me</a>
+            </nav>
+        </div>
+
+        <footer>
+            <p>contact me at: sofiyan123@gmail.com <br> &copy; 2025 by Sofiyan Khan</p>
+        </footer>
+
+    </body>
+
+
+
+
+
+
+</html> <!-- closing tag just like ones for body an head-->

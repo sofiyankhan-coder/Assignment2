@@ -1,37 +1,30 @@
-/* style sheet, pc
-*/
-
 body {
-background-color: #382F2F; 
+background-color: #382F2F;
 color: #F5F5DC;
 font-family: Verdana, Geneva, Arial, sans-serif;
-/* going with the earthy aesthetic with this one*/
 }
 
-
-/* for the banner I used the same gradients as in the tutorials/lectures as i figured it would fit the aesthetic*/
 #banner {
 background: yellow; 
 background: -moz-linear-gradient(45deg, red 0%, yellow 100%); 
 background: -webkit-linear-gradient(45deg, red 0%, yellow 100%); 
 background: -o-linear-gradient(45deg, red 0%, yellow 100%); 
 background: linear-gradient(45deg, red 0%,yellow 100%);
-padding:20px
+padding:15px
 }
 
-nav a{
+nav a {
 color: #002244;
 font-weight: bold;
+display:block;
+margin: 5px 0px;
 }
 
-/* had to align the footer to the bottom left*/
+img,video{
+max-width: 90%;
+height: auto;
+}
+
 footer{
-position:fixed;
-bottom: 0;
-left: 0;
-width: 100%
+    width:100%
 }
-
-
-
-
